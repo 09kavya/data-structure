@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions and Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 60px); /* Full height minus navbar */
+        }
+        .questions {
+            width: 40%;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            overflow-y: auto; /* Allow scrolling for long questions */
+        }
+        .code-output {
+            width: 60%;
+            padding: 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove border around iframe */
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="padding-left: 100px; padding-right: 100px;display: flex;justify-content: space-between;padding-top: 15px;padding-bottom: 15px;box-shadow: 1px 2px 2px #eee;">
+        <div style="display: flex;margin: 0;justify-content: center;">
+        <img style="margin: 0;" src="./connection.png" height="35px" alt="logo">
+        <p style="margin-left: 15px;margin-top: 8px;margin-bottom: 0;">Data Structure</p>
+    </div>
+        <div style="display: flex;justify-content: space-around;font-size: .9rem;color:#666;cursor: pointer;margin-top: 8px;">
+            <div style="padding-left: 25px;"><a href="../index.html" style="text-decoration: none;color: #666;">Home</a></div>
+            <div style="padding-left: 25px;"><a href="../index.html#about" style="text-decoration: none;color: #666;">About</a></div>
+            <div style="padding-left: 25px;"><a href="../index.html#topic" style="text-decoration: none;color: #666;">Topics</a></div>
+            <div style="padding-left: 25px;">Signup</div>
+            <div style="padding-left: 25px;"><img src="./icon_menu.png" height="18px" alt="menu"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="questions">
+            <!-- <iframe src="Questions1.html" title="Questions"></iframe> -->
+            <iframe src="QStrings.html" name="StringsFrame"></iframe>
+              
+            
+        </div>
+        
+        <div class="code-output">
+            <iframe src="main.html" name="mainFrame"></iframe>
+            <!-- <iframe name="codeOutput" src="details.html" title="Code and Output"></iframe> -->
+        </div>
+    </div>
+</body>
+</html>
